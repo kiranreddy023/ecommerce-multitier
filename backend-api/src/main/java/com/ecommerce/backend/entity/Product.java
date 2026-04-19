@@ -1,3 +1,8 @@
+package com.ecommerce.backend.entity;
+
+import jakarta.persistence.*;
+import lombok.Data;
+
 @Entity
 @Data
 public class Product {
@@ -7,6 +12,5 @@ public class Product {
     private Long id;
 
     private String name;
-    private String description;
     private double price;
 }
