@@ -1,11 +1,13 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
+        <groupId>com.ecommerce</groupId>
+        <artifactId>ecommerce-multitier</artifactId>
+        <version>1.0.0</version>
     </parent>
+
+    <artifactId>frontend-app</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,4 +20,13 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

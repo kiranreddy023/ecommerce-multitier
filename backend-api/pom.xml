@@ -1,14 +1,13 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ecommerce</groupId>
-    <artifactId>backend-api</artifactId>
-    <version>1.0</version>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
+        <groupId>com.ecommerce</groupId>
+        <artifactId>ecommerce-multitier</artifactId>
+        <version>1.0.0</version>
     </parent>
+
+    <artifactId>backend-api</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,10 +24,14 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
